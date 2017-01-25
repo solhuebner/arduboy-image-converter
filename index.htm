@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 	<meta name="viewport" content="width=750" />
 	<meta name="buildDate" content="dinsdag 24 januari 2017" />
-	<meta property="og:url" content="https://teamarg.github.io/ATMwebplayer/" />
+	<meta property="og:url" content="https://teamarg.github.io/arduboy-image-converter/" />
 	<meta property="og:type" content="website" /> 
 	<link rel="stylesheet" type="text/css" href="css/textstyles.css" />
 	<script type="text/javascript" src="js/imageCode.js">
@@ -101,7 +101,7 @@
 		        // Generate the sprite string
 		        //var spriteString = "{<br />&#09;";
 		        var spriteString = "const unsigned char PROGMEM "+imageData.name.split('.')[0]+"[] =\n"+
-		        				   "{\n// width, height,\n// 128, 64,\n";
+		        				   "{\n// width, height,\n// "+droppedImage.naturalWidth+", "+droppedImage.naturalHeight+",\n";
 		        
 		        var pageCount = Math.ceil(droppedImage.naturalHeight / 8);
 		        var columnCount = droppedImage.naturalWidth;
@@ -257,73 +257,9 @@
 					<div class="shape_17" style="left:25px;top:534px;width:700px;height:160px;z-index:17;position:absolute;">
 						<div style="margin: 4.32px 2.16px 4.32px 2.16px; " id='image-container'>
 
-							<!-- <p style="line-height:21px;text-align:center;margin-top:0px;margin-bottom:0px;" class="Style28">
-								<span>Ticks: </span><span id="count">0</span>
-							</p>
-							<p style="line-height:21px;" class="Style28">
-								<br />
-							</p>
-							<p style="line-height:21px;text-align:center;margin-bottom:0px;margin-top:0px;" class="Style28">
-								Ch0: 
-								<span class="Style31" id="ch0">OFF</span>
-								<span class="Style68">&nbsp;&nbsp;&nbsp;&nbsp;Ch1: </span>
-								<span class="Style31" id="ch1">OFF</span>
-								<span class="Style68">&nbsp;&nbsp;&nbsp;&nbsp;Ch2: </span>
-								<span class="Style31" id="ch2">OFF</span>
-								<span class="Style68">&nbsp;&nbsp;&nbsp;&nbsp;Ch3: </span>
-								<span class="Style31" id="ch3">OFF</span>
-							</p>
-							<p style="line-height:21px;" class="Style29">
-								<br />
-							</p>
-							<p style="line-height:21px;text-align:center;margin-bottom:0px;margin-top:0px;" class="Style28">
-								<input type="checkbox" id="mute" onchange="output.setVolume(this.checked ? 0.0 : masterVolume);">
-								MUTE FOR THE LOVE OF ALL THINGS SACRED! </input>
-							</p>
-							<p style="line-height:21px;text-align:center;margin-bottom:0px;margin-top:0px;" class="Style28">
-								<input type="checkbox" id="pause" onchange="output.pause(this.checked);">
-								PAUSE MAKES THE GEARS STOP TURNING...</input>
-							</p> -->
 						</div>
 					</div>
 				</div>
-				<!-- <div style="position:relative">
-					<div class="shape_18" style="left:25px;top:766px;width:700px;height:198px;z-index:18;position:absolute;">
-						<div style="margin: 4.32px 2.16px 4.32px 2.16px; ">
-							<p style="line-height:21px;text-align:center;margin-top:0px;margin-bottom:0px;" class="Style28">
-								Before dropping a new file, better refresh the page, so all gears are reset !
-							</p>
-							<p style="line-height:21px;" class="Style28">
-								<br />
-							</p>
-							<p style="line-height:21px;text-align:center;margin-bottom:0px;margin-top:0px;" class="Style28">
-								Don't have a test song yet? why don't you try these:
-							</p>
-							<p style="line-height:21px;" class="Style28">
-								<br />
-							</p>
-							<p style="line-height:21px;text-align:center;margin-bottom:0px;margin-top:0px;" class="Style28">
-								<a href="http://www.team-arg.org/ewExternalFiles/song1.h" class="linkStyle_71" download>
-									song1.h
-								</a>
-							</p>
-							<p style="line-height:21px;text-align:center;margin-bottom:0px;margin-top:0px;" class="Style28">
-								<a href="http://www.team-arg.org/ewExternalFiles/song2.h" class="linkStyle_71" download>
-									song2.h
-								</a>
-							</p>
-							<p style="line-height:21px;" class="Style28">
-								<br />
-							</p>
-							<p style="line-height:21px;text-align:center;margin-bottom:0px;margin-top:0px;" class="Style28">
-								Download a file and then drop it back on the page.
-							</p>
-							<p style="line-height:21px;" class="Style28">
-								<br />
-							</p>
-						</div>
-					</div>
-				</div> -->
 			</div>
 
 
