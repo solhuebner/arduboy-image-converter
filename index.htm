@@ -27,6 +27,7 @@
         	padding:0px;
         	background-color: #FEFEFC;
         	border: 1px solid #463C3C;
+        	white-space: pre;
         }
 	</style>
 	<script language="JavaScript">
@@ -126,7 +127,7 @@
 		                    digitStr = "0" + digitStr;
 		                }
 		                spriteString += "0x" + digitStr + ", ";
-		                if(currentByte%8 == 7) {
+		                if(currentByte%droppedImage.naturalWidth == droppedImage.naturalWidth - 1) {
 							//spriteString += "<br />&#09;";
 							spriteString += "\n";
 						}
