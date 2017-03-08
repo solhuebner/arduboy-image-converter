@@ -96,7 +96,7 @@
 		        	droppedImageContext.drawImage(droppedImage, 0, 0);
 		
 		        	// Generate the sprite string
-		        	var spriteString = "const unsigned char PROGMEM "+imageData.name.split('_')[0]+"[] =\n"+
+		        	var spriteString = "const unsigned char PROGMEM "+imageData.name.split('/_|\./')[0]+"[] =\n"+
 		        					   "{\n// width, height,\n// "+droppedImage.naturalWidth+", "+droppedImage.naturalHeight+",\n";
 		        	
 		        	var pageCount = Math.ceil(droppedImage.naturalHeight / 8);
