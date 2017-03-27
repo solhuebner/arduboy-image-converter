@@ -97,7 +97,7 @@
 
 		        	// Generate the sprite string
 		        	var spriteString = "const unsigned char PROGMEM "+imageData.name.split(/_|\./)[0]+"[] =\n"+
-		        	"{\n// width, height,\n// "+droppedImage.naturalWidth+", "+droppedImage.naturalHeight+",\n";
+		        	"{\n// width, height,\n"+droppedImage.naturalWidth+", "+droppedImage.naturalHeight+",\n";
 		        	
 		        	var pageCount = Math.ceil(droppedImage.naturalHeight / 8);
 		        	var columnCount = droppedImage.naturalWidth;
